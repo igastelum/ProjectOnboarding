@@ -1,2 +1,2 @@
 # ProjectOnboarding
-All code related to stating project onboarding
+All code related to project onboarding
