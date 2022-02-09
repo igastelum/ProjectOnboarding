@@ -52,10 +52,10 @@ public class WeeklyChallenge {
 		System.out.println();
 
 		// Problem 2:
-		System.out.println("203 ->" + happy(203));
-		System.out.println("11 ->" + happy(11));
-		System.out.println("107 ->" + happy(107));
-		System.out.println("7 ->" + happy(7));
+		System.out.println("\n203 is " + (happy(203)? "happy":"unhappy"));
+		System.out.println("11 is " + (happy(11)? "happy":"unhappy"));
+		System.out.println("107 is " + (happy(107)? "happy":"unhappy"));
+		System.out.println("7 is " + (happy(7)? "happy":"unhappy"));
 	}
 
 	public static boolean isHeteromecic(int n) {
