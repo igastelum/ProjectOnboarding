@@ -122,7 +122,6 @@ public class weeklyChallenge {
 		}
 	}
 	
-	
 	public static String appendVal(long times, long num) {
 		String str = "";
 		while(times>0) {
@@ -132,3 +131,5 @@ public class weeklyChallenge {
 		return str;
 	}
 }
+
+
