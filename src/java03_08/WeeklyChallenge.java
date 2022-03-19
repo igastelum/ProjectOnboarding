@@ -23,12 +23,16 @@ public class WeeklyChallenge {
 	public static BigInteger evenFib(int limit) {
 		long [] lastTwo = {0,1};
 		BigInteger sum = new BigInteger("0");
+		int counter = 0;
 		while(lastTwo[1] <= limit) {
+			if(lastTwo[1]%2==0) sum = sum.add(BigInteger.valueOf(lastTwo[1]));
 			long nextFib = lastTwo[0] + lastTwo[1];
 			lastTwo[0] = lastTwo[1];
 			lastTwo[1] = nextFib;
-			if(lastTwo[1]%2==0) sum = sum.add(BigInteger.valueOf(lastTwo[1]));
+			counter++;
 		}
+		System.out.println(counter + "th number in the fibonacci sequence is: " + lastTwo[0]);
+		System.out.println("Last number before exceeding 4,000,000 limit");
 		return sum;
 	}
 }
